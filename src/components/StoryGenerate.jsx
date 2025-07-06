@@ -83,20 +83,20 @@ Only the story.
     <div className="flex items-center justify-center min-w-full min-h-[250px] bg-gradient-to-br from-yellow-50 via-rose-50 to-blue-50">
 
       <div className="bg-white/10 min-w-full  backdrop-blur-sm rounded-2xl shadow-lg px-6 py-4 mb-6">
-  <h1 className="text-5xl sm:text-6xl font-extrabold text-center text-pink-300 tracking-tight drop-shadow-md">
+  <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-center text-pink-300 tracking-tight drop-shadow-md">
     👻🧛 AI Story Generator 🩸💀
   </h1>
 
 
         <textarea
-          className="w-full min-h-[150px] p-6 border-2 border-stone-300 focus:border-blue-500 rounded-2xl text-2xl font-semibold mb-8 transition outline-none shadow-sm bg-white  placeholder:text-stone-400"
+          className="w-full sm:w-[80vw] md:w-[60vw] lg:w-[49.5vw] min-h-[150px] p-6 border-2 border-stone-300 focus:border-blue-500 rounded-2xl text-2xl font-semibold mb-8 transition outline-none shadow-sm bg-white  placeholder:text-stone-400"
           placeholder="Enter your story idea..."
           value={idea}
           onChange={(e) => setIdea(e.target.value)}
         />
-        <div className="flex flex-wrap gap-19 mb-6">
+        <div className="flex  sm:flex-row gap-4 mb-6">
           <select
-            className="flex-1 min-w-[120px] px-3 py-2 border border-violet-300 bg-violet-100 text-violet-800 text-sm font-semibold rounded-lg transition hover:bg-violet-200 focus:outline-none"
+          className="w-full p-2 rounded-lg border border-gray-300 shadow-sm"
             value={language}
             onChange={(e) => setLanguage(e.target.value)}
           >
@@ -105,7 +105,7 @@ Only the story.
             <option value="hinglish">Hinglish</option>
           </select>
           <select
-            className="flex-1 min-w-[120px] px-3 py-2 border gap-9 border-pink-300 bg-pink-100 text-pink-800 text-sm font-semibold rounded-lg transition hover:bg-pink-200 focus:outline-none"
+            className="w-full p-2 rounded-lg border border-gray-300 shadow-sm"
             value={mood}
             onChange={(e) => setMood(e.target.value)}
           >
@@ -120,7 +120,7 @@ Only the story.
         </div>
 
         <button
-          className={`w-full  bg:blue-900 hover:bg-blue-900 text-white text-2xl gap-9 font-extrabold  m-4 py-4 rounded-2xl  shadow-md transition duration-200 ${
+          className={`w-full bg-blue-900 hover:bg-blue-800 text-white text-xl sm:text-2xl font-extrabold px-4 py-3 sm:py-4 rounded-2xl shadow-md transition duration-200  ${
             loading ? "opacity-60 cursor-not-allowed" : ""
           }`}
           onClick={generateStory}
@@ -155,14 +155,14 @@ Only the story.
         </button>
 
         {story && (
-          <div className="bg-yellow-50  border-l-8 border-yellow-600 text-stone-900 p-8 rounded-2xl mt-6 shadow-inner animate-fade-in text-xl font-medium whitespace-pre-wrap">
+          <div className="bg-yellow-50 border-l-8 border-yellow-600 text-stone-900 p-4 sm:p-6 md:p-8 rounded-2xl mt-6 shadow-inner animate-fade-in text-lg sm:text-xl font-medium whitespace-pre-wrap">
             <span className="block mb-4  text-3xl font-extrabold text-stone-700">Your Story:</span>
             {story}
           </div>
         )}
 
         {error && (
-          <div className="bg-red-50  border-l-8 border-red-500 text-red-800 p-6 rounded-2xl mt-4 shadow-inner animate-shake text-xl font-bold">
+          <div className="bg-red-50 border-l-8 border-red-500 text-red-800 p-4 sm:p-6 rounded-2xl mt-4 shadow-inner animate-shake text-lg sm:text-xl font-bold">
             {error}
           </div>
         )}
