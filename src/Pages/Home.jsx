@@ -9,7 +9,7 @@ const Home = () => {
   <p className="text-xl sm:text-2xl text-pink-200 mb-8 text-center tracking-tight max-w-xl drop-shadow-md">
     Enter your idea and get a quick story… in your language! 🔮
   </p>
-  <div className="w-full max-w-4xl bg-white/10 border border-pink-500 rounded-3xl shadow-[0_0_30px_#e11d4855] p-8 backdrop-blur-lg">
+  <div className="w-[800px]  max-w-4xl bg-white/10 border border-pink-500 rounded-3xl shadow-[0_0_30px_#e11d4855] p-8 backdrop-blur-lg">
     <StoryGenerate />
   </div>
 </div>

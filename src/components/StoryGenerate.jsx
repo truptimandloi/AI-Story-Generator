@@ -80,9 +80,9 @@ Only the story.
   };
 
   return (
-    <div className="flex items-center justify-center min-w-[400px] min-h-[250px] bg-gradient-to-br from-yellow-50 via-rose-50 to-blue-50">
+    <div className="flex items-center justify-center min-w-full min-h-[250px] bg-gradient-to-br from-yellow-50 via-rose-50 to-blue-50">
 
-      <div className="bg-white/10 min-w-[400px]  backdrop-blur-sm rounded-2xl shadow-lg px-6 py-4 mb-6">
+      <div className="bg-white/10 min-w-full  backdrop-blur-sm rounded-2xl shadow-lg px-6 py-4 mb-6">
   <h1 className="text-5xl sm:text-6xl font-extrabold text-center text-pink-300 tracking-tight drop-shadow-md">
     👻🧛 AI Story Generator 🩸💀
   </h1>
@@ -155,14 +155,14 @@ Only the story.
         </button>
 
         {story && (
-          <div className="bg-yellow-50 border-l-8 border-yellow-600 text-stone-900 p-8 rounded-2xl mt-6 shadow-inner animate-fade-in text-xl font-medium whitespace-pre-wrap">
-            <span className="block mb-4 text-3xl font-extrabold text-stone-700">Your Story:</span>
+          <div className="bg-yellow-50  border-l-8 border-yellow-600 text-stone-900 p-8 rounded-2xl mt-6 shadow-inner animate-fade-in text-xl font-medium whitespace-pre-wrap">
+            <span className="block mb-4  text-3xl font-extrabold text-stone-700">Your Story:</span>
             {story}
           </div>
         )}
 
         {error && (
-          <div className="bg-red-50 border-l-8 border-red-500 text-red-800 p-6 rounded-2xl mt-4 shadow-inner animate-shake text-xl font-bold">
+          <div className="bg-red-50  border-l-8 border-red-500 text-red-800 p-6 rounded-2xl mt-4 shadow-inner animate-shake text-xl font-bold">
             {error}
           </div>
         )}
