@@ -12,3 +12,6 @@ AI Story Generator is a modern React web app that lets users create imaginative 
 
 🖊️ Custom Prompts: Input your own story idea to personalize the narrative.
 
+🌟 Live demo link
+https://truptimandloi.github.io/AI-Story-Generator/
+
